@@ -1,0 +1,35 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdl="http://soprabanking.com/alert/WS/v1_0/wsdl">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wsdl:initiateAlert>
+       
+         <alert>
+
+                  <attributes>
+                  <attributeKey>account</attributeKey>
+                  <attributeValue>42</attributeValue>
+            </attributes>
+
+            <addressee>AMANAWSP</addressee>
+
+            <addresseeType>OP</addresseeType>
+
+            <context>
+                <contextClientIdentifier>client-ctx</contextClientIdentifier>
+                <contextContractId>contract-ctx</contextContractId>
+            </context>
+
+            <contactAddress>
+            <timeSlot>
+            
+            </timeSlot>
+            <address></address>
+            </contactAddress>
+
+            <notificationType>notifType1</notificationType>
+            <priority>MEDIUM</priority>
+                                                
+         </alert>
+      </wsdl:initiateAlert>
+   </soapenv:Body>
+</soapenv:Envelope>

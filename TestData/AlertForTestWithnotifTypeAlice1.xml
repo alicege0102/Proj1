@@ -1,0 +1,27 @@
+<alert>
+
+                  <attributes>
+                  <attributeKey>account</attributeKey>
+                  <attributeValue>42</attributeValue>
+            </attributes>
+
+            <addressee>ADIRWSP</addressee>
+
+            <addresseeType>OP</addresseeType>
+
+            <context>
+                <contextClientIdentifier>client-ctx</contextClientIdentifier>
+                <contextContractId>contract-ctx</contextContractId>
+            </context>
+
+            <contactAddress>
+            <timeSlot>
+            
+            </timeSlot>
+            <address></address>
+            </contactAddress>
+
+            <notificationType>notifTypeAlice1</notificationType>
+            <priority>MEDIUM</priority>
+                                                
+         </alert>

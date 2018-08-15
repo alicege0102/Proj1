@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdl="http://www.soprabanking.com/alert/WS/v1_0/wsdl">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <wsdl:createNotificationType>
+         <notificationType>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+                  <titles>
+                 <titleValue>English title</titleValue>
+                 <languageCode>en</languageCode>
+            </titles>
+            <titles>
+                 <titleValue>Titre en Français</titleValue>
+                 <languageCode>fr</languageCode>
+            </titles>
+		<alertDisplayDuration>5</alertDisplayDuration>
+		<alertExistenceDuration>5</alertExistenceDuration>
+            
+            <!--Zero or more repetitions:-->
+            <!--Optional:-->
+            <notificationCategory>CAT1</notificationCategory>
+            <!--Optional:-->
+            <notificationTypeName>notifTypeAlice1</notificationTypeName>
+            <!--Optional:-->
+            <priority>MEDIUM</priority>
+            <!--Optional:-->
+            <targetTransaction>WSDL01</targetTransaction>
+
+            <notificationDescriptions>
+                <descriptionValue>The english description</descriptionValue>
+               <languageCode>en</languageCode>
+            </notificationDescriptions>
+               <notificationDescriptions>                       
+               <descriptionValue>La description en Français</descriptionValue>
+               <languageCode>fr</languageCode>
+            </notificationDescriptions>
+
+         </notificationType>
+      </wsdl:createNotificationType>
+   </soapenv:Body>
+</soapenv:Envelope>
